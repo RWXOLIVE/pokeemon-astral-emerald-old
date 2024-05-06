@@ -50,9 +50,9 @@ RustboroCity_House1_EventScript_Hiker::
 	end
 
 RustboroCity_House1_Text_IllTradeIfYouWant:
-	.string "Huh? My POKéMON is cute?\n"
-	.string "Sure, I knew that.\p"
-	.string "But if you really want, I'm willing\n"
+	.string "I'm Ruben, I'll Be Your Trader!\n"
+	.string "I'm Sure, You Knew That.\p"
+	.string "You Want My Gimmighoul, For A Psyduck?\n"
 	.string "to trade it to you.\p"
 	.string "I'll trade you my {STR_VAR_2} for\n"
 	.string "a {STR_VAR_1} if you want.$"

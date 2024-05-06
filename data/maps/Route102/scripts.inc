@@ -65,6 +65,7 @@ Route102_EventScript_Rick::
 
 Route102_EventScript_Tiana::
 	trainerbattle_single TRAINER_TIANA, Route102_Text_TianaIntro, Route102_Text_TianaDefeated
+	setflag FLAG_LVL14CAP
 	msgbox Route102_Text_TianaPostBattle, MSGBOX_AUTOCLOSE
 	end
 
