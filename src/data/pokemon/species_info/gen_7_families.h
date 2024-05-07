@@ -2902,7 +2902,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         FOOTPRINT(Bounsweet)
         .levelUpLearnset = sBounsweetLevelUpLearnset,
         .teachableLearnset = sBounsweetTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 18, SPECIES_STEENEE}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 14, SPECIES_STEENEE}),
     },
 
     [SPECIES_STEENEE] =

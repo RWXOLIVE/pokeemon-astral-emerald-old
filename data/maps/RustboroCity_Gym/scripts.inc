@@ -33,6 +33,28 @@ RustboroCity_Gym_EventScript_GiveRockTomb::
 	release
 	end
 
+RustboroCity_Gym_EventScript_Leader_Brock::
+	trainerbattle_single TRAINER_LEADER_BROCK, RustboroCity_Gym_Text_Leader_BrockIntro, RustboroCity_Gym_Text_Leader_BrockDefeat, RustboroCity_Gym_EventScript_Leader_BrockDefeated NO_MUSIC
+	goto_if_unset FLAG_RECEIVED_TM_ROCK_TOMB, RustboroCity_Gym_EventScript_GiveRockTomb
+	msgbox RustboroCity_Gym_Text_RoxannePostBattle, MSGBOX_DEFAULT
+	release
+	end
+
+RustboroCity_Gym_EventScript_Leader_BrockDefeated::
+	message RustboroCity_Gym_Text_ReceivedStoneBadge
+	waitmessage
+	call Common_EventScript_PlayGymBadgeFanfare
+	msgbox RustboroCity_Gym_Text_StoneBadgeInfoTakeThis, MSGBOX_DEFAULT
+	setflag FLAG_DEFEATED_RUSTBORO_GYM
+	setflag FLAG_BADGE01_GET
+	setvar VAR_RUSTBORO_CITY_STATE, 1
+	addvar VAR_PETALBURG_GYM_STATE, 1
+	setvar VAR_0x8008, 1
+	call Common_EventScript_SetGymTrainers
+	call_if_eq VAR_PETALBURG_GYM_STATE, 6, Common_EventScript_ReadyPetalburgGymForBattle
+	goto RustboroCity_Gym_EventScript_GiveRockTomb
+	end
+
 RustboroCity_Gym_EventScript_RoxanneRematch::
 	trainerbattle_rematch_double TRAINER_ROXANNE_1, RustboroCity_Gym_Text_RoxannePreRematch, RustboroCity_Gym_Text_RoxanneRematchDefeat, RustboroCity_Gym_Text_RoxanneRematchNeedTwoMons
 	msgbox RustboroCity_Gym_Text_RoxannePostRematch, MSGBOX_AUTOCLOSE
@@ -140,6 +162,31 @@ RustboroCity_Gym_Text_GymGuidePostVictory:
 RustboroCity_Gym_Text_JoshIntro:
 	.string "Don't take us GYM TRAINERS lightly!\n"
 	.string "I'll show you why we're better!$"
+
+RustboroCity_Gym_Text_Leader_BrockIntro:	
+	.string "Come Right Ahead, Challenger!\n"
+    .string "My Name Is Brock\p"
+	.string "I'm A Gym Leader From The Kanto Region\p"
+	.string "I Came Out To Hoenn\p" 
+	.string "In Order To Train Their Very Own Rock Gym Leader!\n"
+	.string "But If You're Over Here...\p"
+	.string "I Guess That Means You Want To Try\p"
+	.string "And Break Kanto's Sturdiest Rock!\p"
+	.string "Go On And Try Then!$"
+
+RustboroCity_Gym_Text_Leader_BrockDefeat:
+	.string "Well, I Guess My Strategy\n"
+	.string "Just Hit Rock Bottom This Time\n"
+	.string "Please Accept Your Rewards!$"
+
+RustboroCity_Gym_Text_Leader_BrockPostBattle:
+	.string "Since You Are So Strong, You Should\n"
+	.string "Challenge Other GYM LEADERS.\p"
+	.string "By battling Many TRAINERS, You Should\n"
+	.string "Learn Many Things.\n"
+	.string "And Please A Little Gift.\p"
+	.string "If You See An Old Friend Of Mine.\n"
+	.string "Tell Him Hi, Though He Doesnt Talk Much.$"
 
 RustboroCity_Gym_Text_JoshDefeat:
 	.string "You were too good for me…$"
