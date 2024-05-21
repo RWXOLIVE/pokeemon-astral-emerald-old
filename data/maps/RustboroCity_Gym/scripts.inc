@@ -165,13 +165,13 @@ RustboroCity_Gym_Text_JoshIntro:
 
 RustboroCity_Gym_Text_Leader_BrockIntro:	
 	.string "Come right ahead, challenger!\n"
-    .string "My name is Brock\p"
-	.string "I'm a gym leader from the Kanto region\n"
+    .string "My name is Brock.\p"
+	.string "I'm a gym leader from the Kanto region!\n"
 	.string "I came out to Hoenn\p" 
-	.string "In order to train their very own rock gym leader!\n"
-	.string "But if You're over here...\p"
+	.string "In order to train their very own!\n"
+	.string "rock gym leader, but if you're over here...\p"
 	.string "I guess that means you want to try\n"
-	.string "And break Kanto's sturdiest rock!\p"
+	.string "and break Kanto's sturdiest rock!\p"
 	.string "Go on and try then!$"
 
 RustboroCity_Gym_Text_Leader_BrockDefeat:

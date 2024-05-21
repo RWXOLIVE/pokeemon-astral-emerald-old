@@ -125,7 +125,7 @@
               {
                 "min_level": 4,
                 "max_level": 7,
-                "species": "SPECIES_PONYTA"
+                "species": "SPECIES_ODDISH"
               },
               {
                 "min_level": 4,
@@ -417,12 +417,12 @@
               {
                 "min_level": 6,
                 "max_level": 9,
-                "species": "SPECIES_CHARCADET"
+                "species": "SPECIES_SEWADDLE"
               },
               {
                 "min_level": 6,
                 "max_level": 9,
-                "species": "SPECIES_CHARCADET"
+                "species": "SPECIES_SEWADDLE"
               },
               {
                 "min_level": 6,
@@ -1890,7 +1890,7 @@
               {
                 "min_level": 6,
                 "max_level": 8,
-                "species": "SPECIES_FERROSEED"
+                "species": "SPECIES_TRAPINCH"
               },
               {
                 "min_level": 6,
@@ -8920,12 +8920,12 @@
               {
                 "min_level": 8,
                 "max_level": 8,
-                "species": "SPECIES_TOGEPI"
+                "species": "SPECIES_PETILIL"
               },
               {
                 "min_level": 6,
                 "max_level": 8,
-                "species": "SPECIES_TOGEPI"
+                "species": "SPECIES_PETILIL"
               },
               {
                 "min_level": 6,
@@ -8955,12 +8955,12 @@
               {
                 "min_level": 6,
                 "max_level": 8,
-                "species": "SPECIES_PETILIL"
+                "species": "SPECIES_TOGEPI"
               },
               {
                 "min_level": 6,
                 "max_level": 8,
-                "species": "SPECIES_PETILIL"
+                "species": "SPECIES_TOGEPI"
               },
               {
                 "min_level": 6,
@@ -11490,7 +11490,7 @@
               {
                 "min_level": 6,
                 "max_level": 8,
-                "species": "SPECIES_KRICKETOT"
+                "species": "SPECIES_FLETCHLING"
               },
               {
                 "min_level": 6,
@@ -11535,7 +11535,7 @@
               {
                 "min_level": 6,
                 "max_level": 8,
-                "species": "SPECIES_CHARMANDER"
+                "species": "SPECIES_PONYTA"
               }
             ]
           }

@@ -4535,7 +4535,6 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .types = MON_TYPES(TYPE_GRASS, TYPE_POISON),
         .catchRate = 255,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 64 : 78,
-        .itemRare = ITEM_ABSORB_BULB,
         .genderRatio = PERCENT_FEMALE(50),
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
@@ -4588,7 +4587,6 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .types = MON_TYPES(TYPE_GRASS, TYPE_POISON),
         .catchRate = 120,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 138 : 132,
-        .itemRare = ITEM_ABSORB_BULB,
         .genderRatio = PERCENT_FEMALE(50),
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
@@ -4654,7 +4652,6 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
     #else
         .expYield = 184,
     #endif
-        .itemRare = ITEM_ABSORB_BULB,
         .genderRatio = PERCENT_FEMALE(50),
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
@@ -10341,9 +10338,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         FOOTPRINT(Tyrogue)
         .levelUpLearnset = sTyrogueLevelUpLearnset,
         .teachableLearnset = sTyrogueTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL_ATK_LT_DEF, 20, SPECIES_HITMONCHAN},
-                                {EVO_LEVEL_ATK_GT_DEF, 20, SPECIES_HITMONLEE},
-                                {EVO_LEVEL_ATK_EQ_DEF, 20, SPECIES_HITMONTOP}),
+        .evolutions = EVOLUTION({EVO_LEVEL_ATK_LT_DEF, 22, SPECIES_HITMONCHAN},
+                                {EVO_LEVEL_ATK_GT_DEF, 22, SPECIES_HITMONLEE},
+                                {EVO_LEVEL_ATK_EQ_DEF, 22, SPECIES_HITMONTOP}),
     },
 #endif //P_GEN_2_CROSS_EVOS
 
@@ -14480,7 +14477,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         FOOTPRINT(Munchlax)
         .levelUpLearnset = sMunchlaxLevelUpLearnset,
         .teachableLearnset = sMunchlaxTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_FRIENDSHIP, 0, SPECIES_SNORLAX}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_SNORLAX}),
     },
 #endif //P_GEN_4_CROSS_EVOS
 

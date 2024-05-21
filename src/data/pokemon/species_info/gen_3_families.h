@@ -1846,7 +1846,6 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .types = MON_TYPES(TYPE_WATER, TYPE_FLYING),
         .catchRate = 190,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 54 : 64,
-        .itemCommon = ITEM_PRETTY_FEATHER,
         .genderRatio = PERCENT_FEMALE(50),
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
@@ -1906,7 +1905,6 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
     #else
         .expYield = 164,
     #endif
-        .itemCommon = ITEM_PRETTY_FEATHER,
         .genderRatio = PERCENT_FEMALE(50),
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
@@ -5452,7 +5450,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
     #else
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG),
     #endif
-        .abilities = { ABILITY_UNNERVE, ABILITY_COMPOUND_EYES, ABILITY_ADAPTABILITY },
+        .abilities = { ABILITY_UNNERVE, ABILITY_TINTED_LENS, ABILITY_ADAPTABILITY },
         .bodyColor = BODY_COLOR_GREEN,
         .speciesName = _("Flygon"),
         .cryId = CRY_FLYGON,

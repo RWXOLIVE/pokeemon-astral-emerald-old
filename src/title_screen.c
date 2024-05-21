@@ -499,7 +499,7 @@ static void SpriteCB_PokemonLogoShine(struct Sprite *sprite)
              || sprite->x == DISPLAY_WIDTH / 2 + (4 * SHINE_SPEED)
              || sprite->x == DISPLAY_WIDTH / 2 + (5 * SHINE_SPEED)
              || sprite->x == DISPLAY_WIDTH / 2 + (6 * SHINE_SPEED))
-                gPlttBufferFaded[0] = RGB(24, 31, 12);
+                gPlttBufferFaded[0] = RGB(17, 4, 22);
             else
                 gPlttBufferFaded[0] = backgroundColor;
         }
@@ -665,7 +665,7 @@ void CB2_InitTitleScreen(void)
         if (!UpdatePaletteFade())
         {
             StartPokemonLogoShine(SHINE_MODE_SINGLE_NO_BG_COLOR);
-            ScanlineEffect_InitWave(0, DISPLAY_HEIGHT, 4, 4, 0, SCANLINE_EFFECT_REG_BG1HOFS, TRUE);
+            ScanlineEffect_InitWave(0, DISPLAY_HEIGHT, 3, 3, 0, SCANLINE_EFFECT_REG_BG1HOFS, TRUE);
             SetMainCallback2(MainCB2);
         }
         break;
@@ -756,7 +756,7 @@ static void Task_TitleScreenPhase2(u8 taskId)
                                     | DISPCNT_BG1_ON
                                     | DISPCNT_BG2_ON
                                     | DISPCNT_OBJ_ON);
-        CreatePressStartBanner(START_BANNER_X, 108);
+        CreatePressStartBanner(START_BANNER_X, 134);
         CreateCopyrightBanner(START_BANNER_X, 148);
         gTasks[taskId].tBg1Y = 0;
         gTasks[taskId].func = Task_TitleScreenPhase3;
@@ -856,14 +856,29 @@ static void CB2_GoToBerryFixScreen(void)
 
 static void UpdateLegendaryMarkingColor(u8 frameNum)
 {
-    if ((frameNum % 4) == 0) // Change color every 4th frame
-    {
-        s32 intensity = Cos(frameNum, 128) + 128;
-        s32 r = 31 - ((intensity * 32 - intensity) / 256);
-        s32 g = 31 - (intensity * 22 / 256);
-        s32 b = 12;
+    s32 intensity = Cos(frameNum, 128) + 128;
+    
+    // From [ R: 82  (10) G: 90  (11) B: 107 (13) ]
+    // To   [ R: 114 (14) G: 200 (24) B: 255 (31) ]
+    if ((frameNum % 4) == 0) {
+        // every 4th frame 
+        s32 r = 14 - (intensity * 4 / 256);
+        s32 g = 24 - (intensity * 13 / 256);
+        s32 b = 31 - (intensity * 18 / 256);
+
+        u16 color = RGB(r, g, b);
+        LoadPalette(&color, BG_PLTT_ID(14) + 14, sizeof(color));
+    }
+   
+    // From [ R: 90  (11) G: 66  (08) B: 107 (13) ]
+    // To   [ R: 255 (31) G: 180 (22) B: 255 (31) ]
+    if ((frameNum % 3) == 0) {
+        // every 3rd frame
+        s32 r = 31 - (intensity * 20 / 256);
+        s32 g = 22 - (intensity * 14 / 256);
+        s32 b = 31 - (intensity * 18 / 256);
 
         u16 color = RGB(r, g, b);
         LoadPalette(&color, BG_PLTT_ID(14) + 15, sizeof(color));
-   }
+    }
 }

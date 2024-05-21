@@ -2849,8 +2849,6 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .types = MON_TYPES(TYPE_PSYCHIC),                                                               \
         .catchRate = 225,                                                                               \
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 118 : 61,                                         \
-        .evYield_Attack = 1,                                                                            \
-        .evYield_SpAttack = 1,                                                                          \
         .genderRatio = MON_GENDERLESS,                                                                  \
         .eggCycles = 40,                                                                                \
         .friendship = STANDARD_FRIENDSHIP,                                                              \
@@ -5447,7 +5445,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         FOOTPRINT(Phanpy)
         .levelUpLearnset = sPhanpyLevelUpLearnset,
         .teachableLearnset = sPhanpyTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 25, SPECIES_DONPHAN}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 33, SPECIES_DONPHAN}),
     },
 
     [SPECIES_DONPHAN] =

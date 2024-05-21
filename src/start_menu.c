@@ -1034,7 +1034,7 @@ static u8 SaveConfirmSaveCallback(void)
 
     if (InBattlePyramid())
     {
-        ShowSaveMessage(gText_BattlePyramidConfirmRest, SaveYesNoCallback);
+        sSaveDialogCallback = SaveSavingMessageCallback;
     }
     else
     {
