@@ -97,7 +97,7 @@
 #define FLAG_RESCUED_BIRCH                       0x52
 #define FLAG_LEGENDARIES_IN_SOOTOPOLIS           0x53
 
-#define FLAG_UNUSED_0x054                    0x54  // Unused Flag
+#define FLAG_RECEIVED_ABILITY_CAPSULE                    0x54  // Unused Flag
 #define FLAG_UNUSED_0x055                    0x55  // Unused Flag
 
 #define FLAG_HIDE_CONTEST_POKE_BALL          0x56  // Always set after new game, object it hides is added directly
@@ -119,7 +119,7 @@
 #define FLAG_MOSSDEEP_GYM_SWITCH_3           0x66 //
 #define FLAG_MOSSDEEP_GYM_SWITCH_4           0x67 //
 
-#define FLAG_UNUSED_0x068                    0x68  // Unused Flag
+#define FLAG_RECEIVED_GEODUDE_ALOLAN                    0x68  // Unused Flag
 
 #define FLAG_OCEANIC_MUSEUM_MET_REPORTER     0x69
 #define FLAG_RECEIVED_HM_STRENGTH            0x6A
@@ -652,7 +652,7 @@
 #define FLAG_HIDDEN_ITEM_ROUTE_123_RARE_CANDY                (FLAG_HIDDEN_ITEMS_START + 0x6E)
 #define FLAG_HIDDEN_ITEM_ROUTE_105_BIG_PEARL                 (FLAG_HIDDEN_ITEMS_START + 0x6F)
 
-#define FLAG_UNUSED_0x264  0x264 // Unused Flag
+#define FLAG_HIDDEN_ITEM_ROUTE_116_WISE_GLASSES  0x264 // Unused Flag
 #define FLAG_UNUSED_0x265  0x265 // Unused Flag
 #define FLAG_UNUSED_0x266  0x266 // Unused Flag
 #define FLAG_UNUSED_0x267  0x267 // Unused Flag
@@ -1094,7 +1094,7 @@
 #define FLAG_ITEM_METEOR_FALLS_1F_1R_FULL_HEAL                      0x415
 #define FLAG_ITEM_METEOR_FALLS_1F_1R_MOON_STONE                     0x416
 #define FLAG_ITEM_METEOR_FALLS_1F_1R_PP_UP                          0x417
-#define FLAG_ITEM_RUSTURF_TUNNEL_POKE_BALL                          0x418
+#define FLAG_ITEM_RUSTURF_TUNNEL_DUSK_BALL                          0x418
 #define FLAG_ITEM_RUSTURF_TUNNEL_MAX_ETHER                          0x419
 #define FLAG_ITEM_GRANITE_CAVE_1F_ESCAPE_ROPE                       0x41A
 #define FLAG_ITEM_GRANITE_CAVE_B1F_POKE_BALL                        0x41B

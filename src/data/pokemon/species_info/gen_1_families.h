@@ -3274,7 +3274,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .levelUpLearnset = sSandshrewLevelUpLearnset,
         .teachableLearnset = sSandshrewTeachableLearnset,
         .formSpeciesIdTable = sSandshrewFormSpeciesIdTable,
-        .evolutions = EVOLUTION({EVO_LEVEL, 18, SPECIES_SANDSLASH}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 25, SPECIES_SANDSLASH}),
     },
 
     [SPECIES_SANDSLASH] =
@@ -5915,7 +5915,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .levelUpLearnset = sGrowlitheLevelUpLearnset,
         .teachableLearnset = sGrowlitheTeachableLearnset,
         .formSpeciesIdTable = sGrowlitheFormSpeciesIdTable,
-        .evolutions = EVOLUTION({EVO_MOVE, 34, SPECIES_ARCANINE}),
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_FIRE_STONE, SPECIES_ARCANINE}),
     },
 
     [SPECIES_ARCANINE] =
@@ -6023,7 +6023,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .levelUpLearnset = sGrowlitheHisuianLevelUpLearnset,
         .teachableLearnset = sGrowlitheHisuianTeachableLearnset,
         .formSpeciesIdTable = sGrowlitheFormSpeciesIdTable,
-        .evolutions = EVOLUTION({EVO_LEVEL, 34, SPECIES_ARCANINE_HISUIAN}),
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_FIRE_STONE, SPECIES_ARCANINE_HISUIAN}),
     },
 
     [SPECIES_ARCANINE_HISUIAN] =
@@ -6188,8 +6188,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .levelUpLearnset = sPoliwhirlLevelUpLearnset,
         .teachableLearnset = sPoliwhirlTeachableLearnset,
         .evolutions = EVOLUTION({EVO_MOVE, MOVE_DRAIN_PUNCH, SPECIES_POLIWRATH},
-                                {EVO_MOVE, MOVE_HYPER_VOICE, SPECIES_POLITOED},
-                                {EVO_ITEM, ITEM_KINGS_ROCK, SPECIES_POLITOED}),
+                                {EVO_MOVE, MOVE_HYPER_VOICE, SPECIES_POLITOED}),
     },
 
     [SPECIES_POLIWRATH] =

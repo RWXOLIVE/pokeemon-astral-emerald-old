@@ -79,19 +79,6 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
-      "x": 19,
-      "y": 6,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_ETHER",
-      "script": "Common_EventScript_FindItem",
-      "flag": "FLAG_ITEM_ROUTE_116_ETHER"
-    },
-    {
-      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
       "x": 4,
       "y": 16,
       "elevation": 3,
@@ -156,32 +143,6 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
-      "x": 80,
-      "y": 8,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_HP_UP",
-      "script": "Common_EventScript_FindItem",
-      "flag": "FLAG_ITEM_ROUTE_116_HP_UP"
-    },
-    {
-      "graphics_id": "OBJ_EVENT_GFX_LASS",
-      "x": 26,
-      "y": -3,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NORMAL",
-      "trainer_sight_or_berry_tree_id": "2",
-      "script": "Route116_EventScript_Janice",
-      "flag": "0"
-    },
-    {
       "graphics_id": "OBJ_EVENT_GFX_GIRL_3",
       "x": 17,
       "y": 8,
@@ -219,19 +180,6 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Route116_EventScript_DevonEmployee",
       "flag": "FLAG_HIDE_ROUTE_116_DEVON_EMPLOYEE"
-    },
-    {
-      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
-      "x": 57,
-      "y": 16,
-      "elevation": 4,
-      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
-      "movement_range_x": 1,
-      "movement_range_y": 1,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_X_SPECIAL",
-      "script": "Common_EventScript_FindItem",
-      "flag": "FLAG_ITEM_ROUTE_116_X_SPECIAL"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BLACK_BELT",
@@ -286,19 +234,6 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
-      "x": 34,
-      "y": 7,
-      "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
-      "movement_range_x": 1,
-      "movement_range_y": 1,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_POTION",
-      "script": "Common_EventScript_FindItem",
-      "flag": "FLAG_ITEM_ROUTE_116_POTION"
-    },
-    {
       "graphics_id": "OBJ_EVENT_GFX_YOUNGSTER",
       "x": 36,
       "y": 13,
@@ -309,19 +244,6 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "4",
       "script": "Route116_EventScript_Johnson",
-      "flag": "0"
-    },
-    {
-      "graphics_id": "OBJ_EVENT_GFX_HIKER",
-      "x": 44,
-      "y": -2,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
-      "movement_range_x": 1,
-      "movement_range_y": 1,
-      "trainer_type": "TRAINER_TYPE_NORMAL",
-      "trainer_sight_or_berry_tree_id": "5",
-      "script": "Route116_EventScript_Devan",
       "flag": "0"
     }
   ],
@@ -399,20 +321,6 @@
       "script": "Route116_EventScript_TunnelersRestHouseSign"
     },
     {
-      "type": "secret_base",
-      "x": 71,
-      "y": 4,
-      "elevation": 0,
-      "secret_base_id": "SECRET_BASE_BLUE_CAVE1_1"
-    },
-    {
-      "type": "secret_base",
-      "x": 79,
-      "y": 11,
-      "elevation": 0,
-      "secret_base_id": "SECRET_BASE_BLUE_CAVE2_1"
-    },
-    {
       "type": "sign",
       "x": 16,
       "y": 12,
@@ -429,34 +337,12 @@
       "script": "Route116_EventScript_TrainerTipsBagHasPockets"
     },
     {
-      "type": "secret_base",
-      "x": 56,
-      "y": 6,
-      "elevation": 0,
-      "secret_base_id": "SECRET_BASE_BLUE_CAVE3_2"
-    },
-    {
-      "type": "secret_base",
-      "x": 55,
-      "y": 15,
-      "elevation": 0,
-      "secret_base_id": "SECRET_BASE_BLUE_CAVE4_2"
-    },
-    {
       "type": "hidden_item",
-      "x": 22,
-      "y": 9,
+      "x": 76,
+      "y": 8,
       "elevation": 3,
-      "item": "ITEM_SUPER_POTION",
-      "flag": "FLAG_HIDDEN_ITEM_ROUTE_116_SUPER_POTION"
-    },
-    {
-      "type": "hidden_item",
-      "x": 70,
-      "y": 13,
-      "elevation": 3,
-      "item": "ITEM_BLACK_GLASSES",
-      "flag": "FLAG_HIDDEN_ITEM_ROUTE_116_BLACK_GLASSES"
+      "item": "ITEM_WISE_GLASSES",
+      "flag": "FLAG_HIDDEN_ITEM_ROUTE_116_WISE_GLASSES"
     }
   ]
 }

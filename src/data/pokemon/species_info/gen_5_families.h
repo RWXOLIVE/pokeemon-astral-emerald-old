@@ -74,7 +74,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD, EGG_GROUP_GRASS),
-        .abilities = { ABILITY_SHEER_FORCE, ABILITY_SAP_SIPPER, ABILITY_REGENERATOR },
+        .abilities = { ABILITY_SHEER_FORCE, ABILITY_CONTRARY, ABILITY_REGENERATOR },
         .bodyColor = BODY_COLOR_GREEN,
         .speciesName = _("Snivy"),
         .cryId = CRY_SNIVY,
@@ -126,7 +126,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD, EGG_GROUP_GRASS),
-        .abilities = { ABILITY_SHEER_FORCE, ABILITY_SAP_SIPPER, ABILITY_REGENERATOR },
+        .abilities = { ABILITY_SHEER_FORCE, ABILITY_CONTRARY, ABILITY_REGENERATOR },
         .bodyColor = BODY_COLOR_GREEN,
         .speciesName = _("Servine"),
         .cryId = CRY_SERVINE,
@@ -178,7 +178,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD, EGG_GROUP_GRASS),
-        .abilities = { ABILITY_OVERGROW, ABILITY_NONE, ABILITY_CONTRARY },
+        .abilities = { ABILITY_OVERGROW, ABILITY_CONTRARY, ABILITY_REGENERATOR },
         .bodyColor = BODY_COLOR_GREEN,
         .speciesName = _("Serperior"),
         .cryId = CRY_SERPERIOR,
@@ -1327,7 +1327,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         FOOTPRINT(Munna)
         .levelUpLearnset = sMunnaLevelUpLearnset,
         .teachableLearnset = sMunnaTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 20, SPECIES_MUSHARNA}),
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_MOON_STONE, SPECIES_MUSHARNA}),
     },
 
     [SPECIES_MUSHARNA] =
@@ -1880,7 +1880,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         FOOTPRINT(Woobat)
         .levelUpLearnset = sWoobatLevelUpLearnset,
         .teachableLearnset = sWoobatTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 22, SPECIES_SWOOBAT}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 26, SPECIES_SWOOBAT}),
     },
 
     [SPECIES_SWOOBAT] =
@@ -8376,7 +8376,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         FOOTPRINT(Bisharp)
         .levelUpLearnset = sBisharpLevelUpLearnset,
         .teachableLearnset = sBisharpTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 55, SPECIES_KINGAMBIT}),
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_LEADERS_CREST, SPECIES_KINGAMBIT}),
     },
 
 #if P_GEN_9_CROSS_EVOS

@@ -25,6 +25,49 @@ RustboroCity_Gym_EventScript_RoxanneDefeated::
 	goto RustboroCity_Gym_EventScript_GiveRockTomb
 	end
 
+RustboroCity_Gym_EventScript_GiftItems::
+    giveitem ITEM_ABILITY_CAPSULE, 2
+    goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
+    setflag FLAG_RECEIVED_ABILITY_CAPSULE   
+    msgbox RustboroCity_Gym_Text_GiftItems, MSGBOX_DEFAULT
+    release
+    end
+
+RustboroCity_Gym_EventScript_ReceiveGeodudeAlolan::
+    lock
+	faceplayer
+	msgbox RustboroCity_Gym_Text_GiftGeodude, MSGBOX_DEFAULT
+	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_GEODUDE_ALOLAN
+	givemon SPECIES_GEODUDE_ALOLAN, 5, ITEM_HARD_STONE
+	goto_if_eq VAR_RESULT, MON_GIVEN_TO_PARTY, RustboroCity_Gym_EventScript_ReceiveGeodudeAlolanParty
+	goto_if_eq VAR_RESULT, MON_GIVEN_TO_PC, RustboroCity_Gym_EventScript_ReceiveGeodudeAlolanPC
+	goto Common_EventScript_NoMoreRoomForPokemon
+	end
+
+RustboroCity_Gym_EventScript_ReceiveGeodudeAlolanParty::
+	call RustboroCity_Gym_EventScript_ReceiveGeodudeAlolanFanfare
+	msgbox gText_NicknameThisPokemon, MSGBOX_YESNO
+	call Common_EventScript_GetGiftMonPartySlot
+	call Common_EventScript_NameReceivedPartyMon
+	release
+	end
+
+RustboroCity_Gym_EventScript_ReceiveGeodudeAlolanToPC::
+	call RustboroCity_Gym_EventScript_ReceiveGeodudeAlolanFanfare
+	msgbox gText_NicknameThisPokemon, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, RustboroCity_Gym_EventScript_ReceiveGeodudeAlolanToPC
+	call Common_EventScript_NameReceivedBoxMon
+	goto RustboroCity_Gym_EventScript_ReceiveGeodudeAlolanToPC
+	end	
+
+RustboroCity_Gym_EventScript_ReceiveGeodudeAlolanFanfare::
+	playfanfare MUS_OBTAIN_ITEM
+	message RustboroCity_Gym_Text_GiftGeodude
+	waitmessage
+	waitfanfare
+	bufferspeciesname STR_VAR_1, SPECIES_GEODUDE_ALOLAN
+	return
+
 RustboroCity_Gym_EventScript_GiveRockTomb::
 	giveitem ITEM_TM_ROCK_TOMB
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
@@ -35,8 +78,10 @@ RustboroCity_Gym_EventScript_GiveRockTomb::
 
 RustboroCity_Gym_EventScript_Leader_Brock::
 	trainerbattle_single TRAINER_LEADER_BROCK, RustboroCity_Gym_Text_Leader_BrockIntro, RustboroCity_Gym_Text_Leader_BrockDefeat, RustboroCity_Gym_EventScript_Leader_BrockDefeated NO_MUSIC
-	goto_if_unset FLAG_RECEIVED_TM_ROCK_TOMB, RustboroCity_Gym_EventScript_GiveRockTomb
-	msgbox RustboroCity_Gym_Text_RoxannePostBattle, MSGBOX_DEFAULT
+	goto_if_unset FLAG_RECEIVED_TM_ROCK_TOMB, RustboroCity_Gym_EventScript_GiveRockTomb, 
+	goto_if_unset FLAG_RECEIVED_ABILITY_CAPSULE, RustboroCity_Gym_EventScript_GiftItems
+	goto_if_unset FLAG_RECEIVED_GEODUDE_ALOLAN, RustboroCity_Gym_EventScript_ReceiveGeodudeAlolan
+	msgbox RustboroCity_Gym_Text_Leader_BrockPostBattle, MSGBOX_DEFAULT
 	release
 	end
 
@@ -163,13 +208,29 @@ RustboroCity_Gym_Text_JoshIntro:
 	.string "Don't take us GYM TRAINERS lightly!\n"
 	.string "I'll show you why we're better!$"
 
+RustboroCity_Gym_EventScript_ReceiveGeodudeAlolanPC::
+  	call RustboroCity_Gym_EventScript_ReceiveGeodudeAlolanFanfare
+	msgbox gText_NicknameThisPokemon, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, RustboroCity_Gym_EventScript_ReceiveGeodudeAlolanToPC
+	call Common_EventScript_NameReceivedBoxMon
+	goto RustboroCity_Gym_EventScript_ReceiveGeodudeAlolanToPC
+	end
+
+RustboroCity_Gym_Text_GiftItems:
+    .string "Since you won, here are some rewards!\n"
+	.string "An ability capsule changes\n"
+	.string "the ability of the POKéMON$"
+
+RustboroCity_Gym_Text_GiftGeodude:
+	.string "{PLAYER} received Geodude Alolan!$"
+
 RustboroCity_Gym_Text_Leader_BrockIntro:	
 	.string "Come right ahead, challenger!\n"
     .string "My name is Brock.\p"
 	.string "I'm a gym leader from the Kanto region!\n"
 	.string "I came out to Hoenn\p" 
-	.string "In order to train their very own!\n"
-	.string "rock gym leader, but if you're over here...\p"
+	.string "In order to train their very own rock\n"
+	.string "gym leader, but if you're over here...\p"
 	.string "I guess that means you want to try\n"
 	.string "and break Kanto's sturdiest rock!\p"
 	.string "Go on and try then!$"
@@ -183,10 +244,10 @@ RustboroCity_Gym_Text_Leader_BrockPostBattle:
 	.string "Since you are so strong, you should\n"
 	.string "Challenge other GYM LEADERS.\p"
 	.string "By battling many TRAINERS, you should\n"
-	.string "Learn many things.\n"
+	.string "learn many things.\n"
 	.string "And please a little gift.\p"
 	.string "If you see an old friend of mine.\n"
-	.string "Tell Him Hi, Though He Doesnt Talk Much.$"
+	.string "Tell him hi, he doesnt talk much.$"
 
 RustboroCity_Gym_Text_JoshDefeat:
 	.string "You were too good for me…$"

@@ -1379,7 +1379,7 @@ static void Task_NewGameBirchSpeechSub_InitPokeBall(u8 taskId)
     gSprites[spriteId].invisible = FALSE;
     gSprites[spriteId].data[0] = 0;
 
-    CreatePokeballSpriteToReleaseMon(spriteId, gSprites[spriteId].oam.paletteNum, 112, 58, 0, 0, 32, PALETTES_BG, SPECIES_GIMMIGHOUL_ROAMING);
+    CreatePokeballSpriteToReleaseMon(spriteId, gSprites[spriteId].oam.paletteNum, 112, 58, 0, 0, 32, PALETTES_BG, SPECIES_GIMMIGHOUL);
     gTasks[taskId].func = Task_NewGameBirchSpeechSub_WaitForLotad;
     gTasks[sBirchSpeechMainTaskId].tTimer = 0;
 }
