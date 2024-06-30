@@ -109,19 +109,6 @@
       "flag": "FLAG_HIDE_ROUTE_118_GABBY_AND_TY_1"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_GIRL_2",
-      "x": 12,
-      "y": 10,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
-      "movement_range_x": 1,
-      "movement_range_y": 1,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "Route118_EventScript_Girl",
-      "flag": "0"
-    },
-    {
       "graphics_id": "OBJ_EVENT_GFX_REPORTER_F",
       "x": 33,
       "y": 8,
@@ -366,13 +353,6 @@
       "y": 6,
       "elevation": 0,
       "secret_base_id": "SECRET_BASE_RED_CAVE2_1"
-    },
-    {
-      "type": "secret_base",
-      "x": 29,
-      "y": 5,
-      "elevation": 0,
-      "secret_base_id": "SECRET_BASE_YELLOW_CAVE1_2"
     },
     {
       "type": "secret_base",

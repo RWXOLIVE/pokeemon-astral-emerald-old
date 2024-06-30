@@ -9843,19 +9843,19 @@ const struct Item gItemsInfo[] =
         .secondaryId = MOVE_AERIAL_ACE,
     },
 
-    [ITEM_TM_TORMENT] =
+    [ITEM_TM_SLEEP_TALK] =
     {
         .name = _("TM41"),
-        .price = 3000,
+        .price = 0,
         .description = COMPOUND_STRING(
-            "Prevents the foe\n"
-            "from using the same\n"
-            "move in a row."),
+            "Uses an available\n"
+            "move randomly\n"
+            "while asleep."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_TORMENT,
+        .secondaryId = MOVE_SLEEP_TALK,
     },
 
     [ITEM_TM_FACADE] =
@@ -9918,19 +9918,19 @@ const struct Item gItemsInfo[] =
         .secondaryId = MOVE_ATTRACT,
     },
 
-    [ITEM_TM_THIEF] =
+    [ITEM_TM_TORMENT] =
     {
         .name = _("TM46"),
-        .price = 3000,
+        .price = 0,
         .description = COMPOUND_STRING(
-            "While attacking,\n"
-            "it may steal the\n"
-            "foe's held item."),
+            "Prevents the foe\n"
+            "from using the same\n"
+            "move in a row."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_THIEF,
+        .secondaryId = MOVE_TORMENT,
     },
 
     [ITEM_TM_STEEL_WING] =

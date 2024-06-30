@@ -42,12 +42,12 @@
     F(FIRE_BLAST) \
     F(ROCK_TOMB) \
     F(AERIAL_ACE) \
-    F(TORMENT) \
+    F(SLEEP_TALK) \
     F(FACADE) \
     F(SECRET_POWER) \
     F(REST) \
     F(ATTRACT) \
-    F(THIEF) \
+    F(TORMENT) \
     F(STEEL_WING) \
     F(SKILL_SWAP) \
     F(SNATCH) \

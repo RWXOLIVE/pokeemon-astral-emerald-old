@@ -291,6 +291,13 @@
       "dest_warp_id": "0"
     },
     {
+      "x": 1,
+      "y": 28,
+      "elevation": 0,
+      "dest_map": "MAP_SECRET_BASE_RED_CAVE1",
+      "dest_warp_id": "0"
+    },
+    {
       "x": 5,
       "y": 51,
       "elevation": 0,

@@ -263,6 +263,14 @@ SlateportCity_Harbor_Movement_BoardFerryNorth:
 	walk_up
 	step_end
 
+SlateportCity_Harbor_EventScript_SailorItem::
+    giveitem ITEM_MYSTIC_WATER, 1
+    goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
+    setflag FLAG_RECEIVED_ABILITY_CAPSULE   
+    msgbox SlateportCity_Harbor_Sailor_GiftItems, MSGBOX_DEFAULT
+    release
+    end
+
 SlateportCity_Harbor_EventScript_Sailor::
 	lock
 	faceplayer
@@ -544,3 +552,11 @@ SlateportCity_Harbor_Text_HandedScannerToStern:
 SlateportCity_Harbor_Text_ThisWillHelpResearch:
 	.string "CAPT. STERN: Thanks, {PLAYER}{KUN}!\n"
 	.string "This will help our research a lot!$"
+
+SlateportCity_Harbor_Sailor_GiftItems:
+    .string "You must be that new Trainer\n"
+	.string "I've been hearing about.\n"
+	.string "I'll tell what, have this\p"
+	.string "MYSTICAL WATER.\n"
+	.string "It strengthens the power\n"
+	.string "of all your water type attacks!$"	

@@ -369,7 +369,8 @@ PetalburgWoods_Text_ThatWasAwfullyClose:
 	.string "Thanks to you, he didn't rob me of\n"
 	.string "these important papers.\p"
 	.string "I know, I'll give you a GREAT BALL as\n"
-	.string "my thanks!$"
+	.string "my thanks!\n"
+	.string "Your level cap has been raised to level 19.$"
 
 PetalburgWoods_Text_TeamAquaAfterSomethingInRustboro:
 	.string "Didn't that TEAM AQUA thug say\n"

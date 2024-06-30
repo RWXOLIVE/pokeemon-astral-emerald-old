@@ -6337,7 +6337,6 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
     #else
         .expYield = 73,
     #endif
-        .itemRare = ITEM_TWISTED_SPOON,
         .genderRatio = PERCENT_FEMALE(25),
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
@@ -6621,7 +6620,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         FOOTPRINT(Machop)
         .levelUpLearnset = sMachopLevelUpLearnset,
         .teachableLearnset = sMachopTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 28, SPECIES_MACHOKE}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 25, SPECIES_MACHOKE}),
     },
 
     [SPECIES_MACHOKE] =

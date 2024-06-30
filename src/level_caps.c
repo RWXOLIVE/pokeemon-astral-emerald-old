@@ -13,6 +13,7 @@ u32 GetCurrentLevelCap(void)
         {FLAG_LVL17CAP, 17},
         {FLAG_BADGE01_GET, 19},
         {FLAG_BADGE02_GET, 25},
+        {FLAG_LVL34CAP, 34},
         {FLAG_BADGE03_GET, 37},
         {FLAG_BADGE04_GET, 45},
         {FLAG_BADGE05_GET, 57},

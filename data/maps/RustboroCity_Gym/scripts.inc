@@ -34,8 +34,6 @@ RustboroCity_Gym_EventScript_GiftItems::
     end
 
 RustboroCity_Gym_EventScript_ReceiveGeodudeAlolan::
-    lock
-	faceplayer
 	msgbox RustboroCity_Gym_Text_GiftGeodude, MSGBOX_DEFAULT
 	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_GEODUDE_ALOLAN
 	givemon SPECIES_GEODUDE_ALOLAN, 5, ITEM_HARD_STONE
@@ -47,17 +45,24 @@ RustboroCity_Gym_EventScript_ReceiveGeodudeAlolan::
 RustboroCity_Gym_EventScript_ReceiveGeodudeAlolanParty::
 	call RustboroCity_Gym_EventScript_ReceiveGeodudeAlolanFanfare
 	msgbox gText_NicknameThisPokemon, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, RustboroCity_Gym_EventScript_Geodude
 	call Common_EventScript_GetGiftMonPartySlot
 	call Common_EventScript_NameReceivedPartyMon
+	goto RustboroCity_Gym_EventScript_Geodude
 	end
 
 RustboroCity_Gym_EventScript_ReceiveGeodudeAlolanToPC::
-	call RustboroCity_Gym_EventScript_ReceiveGeodudeAlolanFanfare
+	call Common_EventScript_TransferredToPC
+	goto RustboroCity_Gym_EventScript_Geodude
+	end	
+
+RustboroCity_Gym_EventScript_ReceiveGeodudeAlolanPC::
+  	call RustboroCity_Gym_EventScript_ReceiveGeodudeAlolanFanfare
 	msgbox gText_NicknameThisPokemon, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, RustboroCity_Gym_EventScript_ReceiveGeodudeAlolanToPC
 	call Common_EventScript_NameReceivedBoxMon
 	goto RustboroCity_Gym_EventScript_ReceiveGeodudeAlolanToPC
-	end	
+	end
 
 RustboroCity_Gym_EventScript_ReceiveGeodudeAlolanFanfare::
 	playfanfare MUS_OBTAIN_ITEM
@@ -66,6 +71,12 @@ RustboroCity_Gym_EventScript_ReceiveGeodudeAlolanFanfare::
 	waitfanfare
 	bufferspeciesname STR_VAR_1, SPECIES_GEODUDE_ALOLAN
 	return
+
+RustboroCity_Gym_EventScript_Geodude::
+    msgbox RustboroCity_Gym_Text_GeodudeInfo, MSGBOX_DEFAULT
+	setflag FLAG_RECEIVED_GEODUDE_ALOLAN
+	release
+	end
 
 RustboroCity_Gym_EventScript_GiveRockTomb::
 	giveitem ITEM_TM_ROCK_TOMB
@@ -207,21 +218,20 @@ RustboroCity_Gym_Text_JoshIntro:
 	.string "Don't take us GYM TRAINERS lightly!\n"
 	.string "I'll show you why we're better!$"
 
-RustboroCity_Gym_EventScript_ReceiveGeodudeAlolanPC::
-  	call RustboroCity_Gym_EventScript_ReceiveGeodudeAlolanFanfare
-	msgbox gText_NicknameThisPokemon, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, NO, RustboroCity_Gym_EventScript_ReceiveGeodudeAlolanToPC
-	call Common_EventScript_NameReceivedBoxMon
-	goto RustboroCity_Gym_EventScript_ReceiveGeodudeAlolanToPC
-	end
-
 RustboroCity_Gym_Text_GiftItems:
     .string "Since you won, here are some rewards!\n"
 	.string "An ability capsule changes\n"
 	.string "the ability of the POKéMON$"
 
 RustboroCity_Gym_Text_GiftGeodude:
+	.string "Here is my Geodude, take care of him!\n"
 	.string "{PLAYER} received Geodude Alolan!$"
+
+RustboroCity_Gym_Text_GeodudeInfo:
+    .string "Do you know why alolan Geodude\n"
+	.string "part electric type?\p"
+	.string "It's because its body is a\n"
+	.string "magnetic stone!$"
 
 RustboroCity_Gym_Text_Leader_BrockIntro:	
 	.string "Come right ahead, challenger!\n"
@@ -237,7 +247,8 @@ RustboroCity_Gym_Text_Leader_BrockIntro:
 RustboroCity_Gym_Text_Leader_BrockDefeat:
 	.string "Well, I guess my strategy\n"
 	.string "Just hit rock bottom this time\n"
-	.string "Please accept your rewards!$"
+	.string "Please accept your rewards!\n"
+	.string "Your level cap has raised to level 25.$"
 
 RustboroCity_Gym_Text_Leader_BrockPostBattle:
 	.string "Since you are so strong, you should\n"
@@ -301,7 +312,8 @@ RustboroCity_Gym_Text_RoxanneDefeat:
 	.string "that TRAINERS are to be given this\l"
 	.string "if they defeat a GYM LEADER.\p"
 	.string "Please accept the official POKéMON\n"
-	.string "LEAGUE STONE BADGE.$"
+	.string "LEAGUE STONE BADGE.\n"
+	.string "Your level cap has raised to level 25.$"
 
 RustboroCity_Gym_Text_ReceivedStoneBadge:
 	.string "{PLAYER} received the STONE BADGE\n"

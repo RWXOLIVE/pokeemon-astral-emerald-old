@@ -89,13 +89,6 @@
       "elevation": 0,
       "dest_map": "MAP_DEWFORD_TOWN_GYM",
       "dest_warp_id": "0"
-    },
-    {
-      "x": 29,
-      "y": 1,
-      "elevation": 0,
-      "dest_map": "MAP_GRANITE_CAVE_B2F",
-      "dest_warp_id": "4"
     }
   ],
   "coord_events": [
