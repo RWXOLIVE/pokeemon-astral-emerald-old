@@ -2482,12 +2482,8 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .types = MON_TYPES(TYPE_GROUND, TYPE_GRASS),
         .catchRate = 190,
         .expYield = 67,
-<<<<<<< HEAD
-=======
-        .evYield_SpDefense = 1,
         .itemCommon = ITEM_TINY_MUSHROOM,
         .itemRare = ITEM_BIG_MUSHROOM,
->>>>>>> c0eb9af2e61fd068a10920f9d5b67658681752fe
         .genderRatio = PERCENT_FEMALE(50),
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
@@ -2540,12 +2536,8 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .types = MON_TYPES(TYPE_GROUND, TYPE_GRASS),
         .catchRate = 90,
         .expYield = 180,
-<<<<<<< HEAD
-=======
-        .evYield_SpDefense = 2,
         .itemCommon = ITEM_TINY_MUSHROOM,
         .itemRare = ITEM_BIG_MUSHROOM,
->>>>>>> c0eb9af2e61fd068a10920f9d5b67658681752fe
         .genderRatio = PERCENT_FEMALE(50),
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
@@ -4285,11 +4277,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .types = MON_TYPES(TYPE_GROUND, TYPE_FIGHTING),
         .catchRate = 30,
         .expYield = 285,
-<<<<<<< HEAD
-=======
-        .evYield_Attack = 3,
         .itemRare = ITEM_BOOSTER_ENERGY,
->>>>>>> c0eb9af2e61fd068a10920f9d5b67658681752fe
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 50,
         .friendship = 0,
@@ -4344,11 +4332,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .types = MON_TYPES(TYPE_FAIRY, TYPE_PSYCHIC),
         .catchRate = 50,
         .expYield = 285,
-<<<<<<< HEAD
-=======
-        .evYield_HP = 3,
         .itemRare = ITEM_BOOSTER_ENERGY,
->>>>>>> c0eb9af2e61fd068a10920f9d5b67658681752fe
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 50,
         .friendship = 0,
@@ -4403,11 +4387,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .types = MON_TYPES(TYPE_GRASS, TYPE_DARK),
         .catchRate = 50,
         .expYield = 285,
-<<<<<<< HEAD
-=======
-        .evYield_Attack = 3,
         .itemRare = ITEM_BOOSTER_ENERGY,
->>>>>>> c0eb9af2e61fd068a10920f9d5b67658681752fe
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 50,
         .friendship = 0,
@@ -4462,13 +4442,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .types = MON_TYPES(TYPE_GHOST, TYPE_FAIRY),
         .catchRate = 30,
         .expYield = 285,
-<<<<<<< HEAD
-=======
-        .evYield_Speed = 1,
-        .evYield_SpAttack = 1,
-        .evYield_SpDefense = 1,
         .itemRare = ITEM_BOOSTER_ENERGY,
->>>>>>> c0eb9af2e61fd068a10920f9d5b67658681752fe
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 50,
         .friendship = 0,
@@ -4524,11 +4498,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .types = MON_TYPES(TYPE_BUG, TYPE_FIGHTING),
         .catchRate = 30,
         .expYield = 285,
-<<<<<<< HEAD
-=======
-        .evYield_Attack = 3,
         .itemRare = ITEM_BOOSTER_ENERGY,
->>>>>>> c0eb9af2e61fd068a10920f9d5b67658681752fe
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 50,
         .friendship = 0,
@@ -4582,11 +4552,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .types = MON_TYPES(TYPE_ELECTRIC, TYPE_GROUND),
         .catchRate = 30,
         .expYield = 285,
-<<<<<<< HEAD
-=======
-        .evYield_SpAttack = 3,
         .itemRare = ITEM_BOOSTER_ENERGY,
->>>>>>> c0eb9af2e61fd068a10920f9d5b67658681752fe
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 50,
         .friendship = 0,
@@ -4641,11 +4607,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .types = MON_TYPES(TYPE_GROUND, TYPE_STEEL),
         .catchRate = 30,
         .expYield = 285,
-<<<<<<< HEAD
-=======
-        .evYield_Defense = 3,
         .itemRare = ITEM_BOOSTER_ENERGY,
->>>>>>> c0eb9af2e61fd068a10920f9d5b67658681752fe
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 50,
         .friendship = 0,
@@ -4700,11 +4662,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .types = MON_TYPES(TYPE_ICE, TYPE_WATER),
         .catchRate = 50,
         .expYield = 285,
-<<<<<<< HEAD
-=======
-        .evYield_Speed = 3,
         .itemRare = ITEM_BOOSTER_ENERGY,
->>>>>>> c0eb9af2e61fd068a10920f9d5b67658681752fe
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 50,
         .friendship = 0,
@@ -4759,11 +4717,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .types = MON_TYPES(TYPE_FIGHTING, TYPE_ELECTRIC),
         .catchRate = 50,
         .expYield = 285,
-<<<<<<< HEAD
-=======
-        .evYield_Attack = 3,
         .itemRare = ITEM_BOOSTER_ENERGY,
->>>>>>> c0eb9af2e61fd068a10920f9d5b67658681752fe
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 50,
         .friendship = 0,
@@ -4818,11 +4772,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .types = MON_TYPES(TYPE_DARK, TYPE_FLYING),
         .catchRate = 30,
         .expYield = 285,
-<<<<<<< HEAD
-=======
-        .evYield_SpAttack = 3,
         .itemRare = ITEM_BOOSTER_ENERGY,
->>>>>>> c0eb9af2e61fd068a10920f9d5b67658681752fe
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 50,
         .friendship = 0,
@@ -4878,11 +4828,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .types = MON_TYPES(TYPE_FIRE, TYPE_POISON),
         .catchRate = 30,
         .expYield = 285,
-<<<<<<< HEAD
-=======
-        .evYield_SpAttack = 3,
         .itemRare = ITEM_BOOSTER_ENERGY,
->>>>>>> c0eb9af2e61fd068a10920f9d5b67658681752fe
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 50,
         .friendship = 0,
@@ -4938,11 +4884,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .types = MON_TYPES(TYPE_ROCK, TYPE_ELECTRIC),
         .catchRate = 30,
         .expYield = 285,
-<<<<<<< HEAD
-=======
-        .evYield_Attack = 3,
         .itemRare = ITEM_BOOSTER_ENERGY,
->>>>>>> c0eb9af2e61fd068a10920f9d5b67658681752fe
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 50,
         .friendship = 0,
@@ -5530,11 +5472,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .types = MON_TYPES(TYPE_DRAGON, TYPE_DARK),
         .catchRate = 10,
         .expYield = 295,
-<<<<<<< HEAD
-=======
-        .evYield_Attack = 3,
         .itemRare = ITEM_BOOSTER_ENERGY,
->>>>>>> c0eb9af2e61fd068a10920f9d5b67658681752fe
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 50,
         .friendship = 0,
@@ -5590,11 +5528,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .types = MON_TYPES(TYPE_FAIRY, TYPE_FIGHTING),
         .catchRate = 10,
         .expYield = 295,
-<<<<<<< HEAD
-=======
-        .evYield_Attack = 3,
         .itemRare = ITEM_BOOSTER_ENERGY,
->>>>>>> c0eb9af2e61fd068a10920f9d5b67658681752fe
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 50,
         .friendship = 0,
@@ -5758,11 +5692,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .types = MON_TYPES(TYPE_WATER, TYPE_DRAGON),
         .catchRate = 5,
         .expYield = 295,
-<<<<<<< HEAD
-=======
-        .evYield_SpAttack = 3,
         .itemRare = ITEM_BOOSTER_ENERGY,
->>>>>>> c0eb9af2e61fd068a10920f9d5b67658681752fe
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 50,
         .friendship = 0,
@@ -5816,11 +5746,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .types = MON_TYPES(TYPE_GRASS, TYPE_PSYCHIC),
         .catchRate = 5,
         .expYield = 295,
-<<<<<<< HEAD
-=======
-        .evYield_Attack = 3,
         .itemRare = ITEM_BOOSTER_ENERGY,
->>>>>>> c0eb9af2e61fd068a10920f9d5b67658681752fe
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 50,
         .friendship = 0,
@@ -6310,11 +6236,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .types = MON_TYPES(TYPE_FIRE, TYPE_DRAGON),
         .catchRate = 10,
         .expYield = 295,
-<<<<<<< HEAD
-=======
-        .evYield_Defense = 3,
         .itemRare = ITEM_BOOSTER_ENERGY,
->>>>>>> c0eb9af2e61fd068a10920f9d5b67658681752fe
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 50,
         .friendship = 0,
@@ -6369,11 +6291,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .types = MON_TYPES(TYPE_ELECTRIC, TYPE_DRAGON),
         .catchRate = 10,
         .expYield = 295,
-<<<<<<< HEAD
-=======
-        .evYield_SpAttack = 3,
         .itemRare = ITEM_BOOSTER_ENERGY,
->>>>>>> c0eb9af2e61fd068a10920f9d5b67658681752fe
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 50,
         .friendship = 0,
@@ -6428,11 +6346,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .types = MON_TYPES(TYPE_ROCK, TYPE_PSYCHIC),
         .catchRate = 10,
         .expYield = 295,
-<<<<<<< HEAD
-=======
-        .evYield_Speed = 3,
         .itemRare = ITEM_BOOSTER_ENERGY,
->>>>>>> c0eb9af2e61fd068a10920f9d5b67658681752fe
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 50,
         .friendship = 0,
@@ -6486,11 +6400,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .types = MON_TYPES(TYPE_STEEL, TYPE_PSYCHIC),
         .catchRate = 10,
         .expYield = 295,
-<<<<<<< HEAD
-=======
-        .evYield_SpAttack = 3,
         .itemRare = ITEM_BOOSTER_ENERGY,
->>>>>>> c0eb9af2e61fd068a10920f9d5b67658681752fe
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 50,
         .friendship = 0,
