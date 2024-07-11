@@ -1174,7 +1174,12 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .types = MON_TYPES(TYPE_FIRE, TYPE_FLYING),
         .catchRate = 45,
         .expYield = 167,
+<<<<<<< HEAD
         .itemRare = ITEM_HONEY,
+=======
+        .evYield_SpAttack = 2,
+        .itemRare = ITEM_RED_NECTAR,
+>>>>>>> c0eb9af2e61fd068a10920f9d5b67658681752fe
         .genderRatio = PERCENT_FEMALE(75),
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
@@ -1228,7 +1233,12 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .types = MON_TYPES(TYPE_ELECTRIC, TYPE_FLYING),
         .catchRate = 45,
         .expYield = 167,
+<<<<<<< HEAD
         .itemRare = ITEM_HONEY,
+=======
+        .evYield_SpAttack = 2,
+        .itemRare = ITEM_YELLOW_NECTAR,
+>>>>>>> c0eb9af2e61fd068a10920f9d5b67658681752fe
         .genderRatio = PERCENT_FEMALE(75),
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
@@ -1282,7 +1292,12 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .types = MON_TYPES(TYPE_PSYCHIC, TYPE_FLYING),
         .catchRate = 45,
         .expYield = 167,
+<<<<<<< HEAD
         .itemRare = ITEM_HONEY,
+=======
+        .evYield_SpAttack = 2,
+        .itemRare = ITEM_PINK_NECTAR,
+>>>>>>> c0eb9af2e61fd068a10920f9d5b67658681752fe
         .genderRatio = PERCENT_FEMALE(75),
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
@@ -1336,7 +1351,12 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .types = MON_TYPES(TYPE_GHOST, TYPE_FLYING),
         .catchRate = 45,
         .expYield = 167,
+<<<<<<< HEAD
         .itemRare = ITEM_HONEY,
+=======
+        .evYield_SpAttack = 2,
+        .itemRare = ITEM_PURPLE_NECTAR,
+>>>>>>> c0eb9af2e61fd068a10920f9d5b67658681752fe
         .genderRatio = PERCENT_FEMALE(75),
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
@@ -3548,6 +3568,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .baseSpAttack  = 60,                                    \
         .baseSpDefense = 100,                                   \
         .weight = 400,                                          \
+        .description = gMiniorMeteorPokedexText,                \
         .frontPic = gMonFrontPic_MiniorMeteor,                  \
         .frontPicSize = MON_COORDS_SIZE(48, 40),                \
         .frontPicYOffset = 14,                                  \
